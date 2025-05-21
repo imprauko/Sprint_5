@@ -29,10 +29,10 @@ class ConstructorPageLocators:
     HEADER_CONSTRUCTOR = (By.XPATH, '//*[@id="root"]/div/main/section[1]/h1')  # Заголовок "Соберите бургер"
 
     BUTTON_BUNS = (By.XPATH, '//*[@id="root"]/div/main/section[1]/div[1]/div[1]')  # Кнопка "Булки"
-    HEADER_BUNS = (By.XPATH, '//*[@id="root"]/div/main/section[1]/div[2]/h2[1]')  # Заголовок "Булки"
+    HEADER_BUNS = (By.XPATH, '//*[@id="root"]/div/main/section[1]/div[2]/h2[1]')  # Заголовок "Булки" в скролле
 
     BUTTON_SAUCES = (By.XPATH, '//*[@id="root"]/div/main/section[1]/div[1]/div[2]')  # Кнопка "Соусы"
-    HEADER_SAUCES = (By.XPATH, '//*[@id="root"]/div/main/section[1]/div[2]/h2[2]')  # Заголовок "Соусы"
+    HEADER_SAUCES = (By.XPATH, '//*[@id="root"]/div/main/section[1]/div[2]/h2[2]')  # Заголовок "Соусы" в скролле
 
     BUTTON_FILLINGS = (By.XPATH, '//*[@id="root"]/div/main/section[1]/div[1]/div[3]')  # Кнопка "Начинки"
-    HEADER_FILLINGS = (By.XPATH, '//*[@id="root"]/div/main/section[1]/div[2]/h2[3]')  # Заголовок "Начинки"
+    HEADER_FILLINGS = (By.XPATH, '//*[@id="root"]/div/main/section[1]/div[2]/h2[3]')  # Заголовок "Начинки" в скролле
