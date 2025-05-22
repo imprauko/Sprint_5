@@ -1,10 +1,7 @@
-from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 from locators.all_locators import (
     MainPageLocators,
-    LoginPageLocators,
-    RegistrationPageLocators,
     ProfilePageLocators,
     ConstructorPageLocators
 )
@@ -12,18 +9,7 @@ from test_data.test_data import (
     Urls,
 )
 class TestTranspasses:
-    
-    # BUTTON_ACCOUNT_MAIN_PAGE = '//*[@id="root"]/div/header/nav/a'
-    # BUTTON_LOGOUT = '//*[@id="root"]/div/main/div/nav/ul/li[3]/button'
-    # BUTTON_CONSTRUCTOR = '//*[@id="root"]/div/header/nav/ul/li[1]/a'
-    # HEADER_CONSTRUCTOR = '//*[@id="root"]/div/main/section[1]/h1'
-    # BUTTON_STELLAR_BURGERS = '//*[@id="root"]/div/header/nav/div/a'
-    # BUTTON_SAUCES = '//*[@id="root"]/div/main/section[1]/div[1]/div[2]'
-    # BUTTON_FILLINGS = '//*[@id="root"]/div/main/section[1]/div[1]/div[3]'
-    # HEADER_SAUCES = '//*[@id="root"]/div/main/section[1]/div[2]/h2[2]'
-    # HEADER_FILLINGS = '//*[@id="root"]/div/main/section[1]/div[2]/h2[3]'
-    # BUTTON_BUNS = '//*[@id="root"]/div/main/section[1]/div[1]/div[1]'
-    
+
     def test_to_profile_page_transpass(self, setup_logged_in):
         driver = setup_logged_in
         driver.find_element(*MainPageLocators.BUTTON_ACCOUNT_MAIN_PAGE).click()
